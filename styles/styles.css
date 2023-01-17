@@ -1254,7 +1254,7 @@ a {
     animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* @media (max-width: 768px) {
+@media (max-width: 768px) {
     .backdrop {
         display: none;
     }
@@ -1270,7 +1270,7 @@ a {
     .contact-info-container {
         display: none;
     }
-} */
+}
 
 .button-burger {
     background-color: white;
@@ -1289,8 +1289,10 @@ a {
       display: none;
     }
   }
+
+
   
-/* mobile menu */
+/* mobile */
 
   .menu .link {
     padding: 10px;

@@ -13,8 +13,9 @@
 </head>
 <body>
     <header class="head">
-        <div class="container header-container">
+        <div class="container">
         <nav class="navigation">
+            <div class="header-container">
             <a class="web" href="">WEB<span class="studio">STUDIO</span></a>
             <button
           class="button-burger js-open-menu"
@@ -31,6 +32,7 @@
               d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
               clip-rule="evenodd"></path>
           </svg>
+        </div>
         </button>
         </button>
             <ul class="web-text list">
@@ -448,7 +450,7 @@
         </div>
         <div class="menu-container js-menu-container" id="mobile-menu">
             <button class="menu-toggle js-close-menu">
-              <svg
+              <svg class="mobile-toogle-cross"
                 fill="currentColor"
                 viewBox="0 0 20 20"
                 xmlns="http://www.w3.org/2000/svg"
@@ -464,27 +466,27 @@
             </button>
       
             <ul class="mobile-menu list">
-              <li class="modal-menu-mobile">
-                <a href="" class="modal-menu-mobile link">Studio</a>
+              <li class="modal-menu-item">
+                <a href="" class="mobile-menu-link link">Studio</a>
             </li>
-              <li class="modal-menu-mobile">
-                <a href="" class="modal-menu-mobile link">Portfoli</a>
+              <li class="modal-menu-item">
+                <a href="" class="mobile-menu-link link">Portfoli</a>
             </li>
-              <li class="modal-menu-mobile">
-                <a href="" class="modal-menu-mobile link">Contacts</a>
+              <li class="modal-menu-item">
+                <a href="" class="mobile-menu-link link">Contacts</a>
             </li>
             </ul>
-            <ul class="contact-info-container-mobile list">
-                <li>
-                    <a class="contact-info" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            <ul class="mobile-contacts list">
+                <li class="mobile-contacts-item">
+                    <a class="mobile-contacts-link accent link" href="tel:+11(000)1111111">+11 (000) 111-11-11</a>
                 </li>
-                <li>
-                    <a class="contact-info" href="tel:+11(000)1111111">+11 (000) 111-11-11</a>
+                <li class="mobile-contacts-item">
+                    <a class="mobile-contacts-item" href="mailto:info@devstudio.com">info@devstudio.com</a>
                 </li>
             </ul> 
-            <ul class="our-team-icons list">
+            <ul class="our-team-icons-mobile list">
                 <li class="our-team-items">
-                    <a class="icon-our-team" href="https://www.instagram.com/" >
+                    <a class="icon-our-team" href="#">
                         <svg class="our-soc-icon">
                             <use href="./icons.svg#icon-instagram-2"></use>
                         </svg>

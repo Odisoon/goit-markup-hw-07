@@ -3,6 +3,11 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+html, body {
+    overflow-x: hidden;
+  }
+
+
 .web {
     font-family: 'Raleway';
 }

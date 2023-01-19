@@ -857,11 +857,11 @@ a {
     align-items: center;
 }
 
-/* @media (max-width: 768px) {
+@media (max-width: 768px) {
     .modal {
         display: none;
     }
-} */
+} 
 /* tablet screen */
 
 @media (max-width: 767.8px) {
@@ -921,6 +921,24 @@ a {
         justify-content: space-between;
     }
 }
+
+.web-text .list {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+
+
+
+
+
+
+
+
+
+
 
     /* desktop screen */
 

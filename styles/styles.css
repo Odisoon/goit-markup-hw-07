@@ -1342,11 +1342,6 @@ a {
     outline: none;
   }
   
-  @media (min-width: 768px) {
-    .menu-toggle {
-      display: none;
-    }
-  }
   
   .menu-toggle:hover,
   .menu-toggle:focus {

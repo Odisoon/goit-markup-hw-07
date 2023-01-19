@@ -846,6 +846,12 @@ a {
      */
 }
 
+.list {
+    color: #2E2F42;
+    padding-top: 24px;
+    padding-bottom: 28px;
+}
+
 .header-container {
     display: flex;
     align-items: center;
@@ -906,6 +912,13 @@ a {
         align-items: center;
         gap: 40px
         ;
+    }
+}
+
+@media (min-width:767.8px) {
+    .header-container-tablet-desk {
+        display: flex;
+        justify-content: space-between;
     }
 }
 

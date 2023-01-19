@@ -858,9 +858,9 @@ a {
 } */
 /* tablet screen */
 
-@media (max-width: 768px) {
+@media (max-width: 767.8px) {
     .container {
-        max-width: 768px;
+        max-width: 767.8px;
     }
 }
 
@@ -879,13 +879,36 @@ a {
     
     /* tablet screen */
 
-@media and (min-width: 768px) {
+@media and (min-width: 767.8px) {
     .container-targets {
         padding-top: 96px;
         padding-bottom: 96px;
         }
     }
-    
+
+@media (min-width: 767.8px) {
+    .web-text {
+        display: flex;
+        gap: 40px;
+    }
+}
+
+@media (min-width: 767.8px) {
+    .navigation {
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media (min-width: 767.8px) {
+    .contact-info-container {
+        display: flex;
+        align-items: center;
+        gap: 40px
+        ;
+    }
+}
+
     /* desktop screen */
 
 @media and (min-width: 1200px) {
@@ -907,7 +930,7 @@ a {
     }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767.8px) {
     .icon-subtitles {
         display: none;
     }
@@ -922,7 +945,7 @@ a {
     margin-bottom: 8px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767.8px) {
     .subtitles {
         text-align: center;
         font-weight: 700;
@@ -1274,17 +1297,19 @@ a {
     }
 } */
 
-@media (max-width: 768px) {
+@media (max-width: 767.8px) {
     .web-text {
         display: none;
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767.8px) {
     .contact-info-container {
         display: none;
     }
 }
+
+
 
 .button-burger {
     background-color: white;
@@ -1292,7 +1317,7 @@ a {
     margin-left: auto;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 767.8px) {
     .button-burger {
         display: none;
     }
@@ -1305,7 +1330,7 @@ a {
     list-style: none;
   }
   
-  @media (max-width: 767px) {
+  @media (max-width: 767.8px) {
     .menu {
       display: none;
     }
@@ -1381,11 +1406,11 @@ a {
     border: 1px solid rgba(0, 0, 0, 0.1);
   }
 
-  @media (min-width: 768px) {
+  /* @media (min-width: 767.8px) {
     .menu-container {
         display: none;
     }
-  }
+  } */
 
   .mobile-toogle-cross {
     width: 8px;

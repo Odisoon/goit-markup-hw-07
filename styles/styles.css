@@ -3,9 +3,9 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-html, body {
+/* html, body {
     overflow-x: hidden;
-  }
+  } */
 
 
 .web {
@@ -851,11 +851,11 @@ a {
     align-items: center;
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .modal {
         display: none;
     }
-}
+} */
 /* tablet screen */
 
 @media (max-width: 768px) {
@@ -1292,6 +1292,12 @@ a {
     margin-left: auto;
 }
 
+@media (min-width: 768px) {
+    .button-burger {
+        display: none;
+    }
+}
+
 .menu {
     display: flex;
     padding: 0;
@@ -1378,6 +1384,12 @@ a {
     color: #000000;
     background: #E7E9FC;
     border: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  @media (min-width: 768px) {
+    .menu-container {
+        display: none;
+    }
   }
 
   .mobile-toogle-cross {

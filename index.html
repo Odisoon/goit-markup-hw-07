@@ -13,27 +13,15 @@
 </head>
 <body>
     <header class="head">
-        <div class="container header-container-tablet-desk">
+        <div class="container header-container">
         <nav class="navigation">
-            <div class="header-container">
+            <div class="header-container-mobile">
             <a class="web" href="">WEB<span class="studio">STUDIO</span></a>
-            <button
-          class="button-burger js-open-menu"
-          aria-expanded="false"
-          aria-controls="mobile-menu">
-          <svg
-            width="29"
-            height="18"
-            fill="currentColor"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg">
-            <path
-              fill-rule="evenodd"
-              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-              clip-rule="evenodd"></path>
+            <button class="button-burger js-open-menu" type="button" >
+          <svg class="icon-burger" width="32px" height="22px">
+            <use href="./icons.svg#icon-burger"></use>
           </svg>
-        </div>
-        </button>
+            </div>
         </button>
             <ul class="web-text list">
                 <li class="webtext-item"><a class="list current" href="#">Studio</a></li>
@@ -42,10 +30,10 @@
             </ul>
         </nav>
         <ul class="contact-info-container">
-            <li>
+            <li class="contact-info-item">
                 <a class="contact-info" href="mailto:info@devstudio.com">info@devstudio.com</a>
             </li>
-            <li>
+            <li class="contact-info-item"> 
                 <a class="contact-info" href="tel:+11(000)1111111">+11 (000) 111-11-11</a>
             </li>
         </ul> 
@@ -125,7 +113,7 @@
             <div class="container">
                 <h2 class="header-2">Our Team</h2>
                     <ul class="container-subtitles">
-                        <li class="our-team">
+                        <li class="our-team accent">
                             <img width="264" height="260" src="./images/photo-1-1.jpg" alt="Mark Guerrero">
                             <div class="box-text">
                                 <p class="subtitles subtitles-team">Mark Guerrero</p>
@@ -162,7 +150,7 @@
                                     </li>
                     </ul>
                     </li>
-                    <li class="our-team">
+                    <li class="our-team accent">
                         <img width="264" height="260" src="./images/photo-1-2.jpg" alt="Tom Ford">
                             <div class="box-text">
                             <p class="subtitles subtitles-team">Tom Ford</p>
@@ -348,6 +336,13 @@
             <div class="footer-container">
         <a class="web" href="/">WEB<span class="studio-white">STUDIO</span></a>
         <p class="footer-text">Increase the flow of customers and sales for your business with digital marketing & growth solutions.</p>
+        <form class="footer-subscribe_form">
+            <label class="footer-subscribe">Subscribe</label>
+            <div class="footer-subscribe_con">
+                <input class="footer-subscribe_search" type="email" placeholder="E-mail">
+
+        </div>
+        </form>
         </div>
             <div class="second-con-footer">
                 <h2 class="social-media">Social media</h2>
@@ -385,14 +380,9 @@
                         </a>
                     </li>
                 </ul>
+                <button class="footer-subscribe_button" type="submit">Subscribe</button>
         </div>
-        <form class="footer-subscribe_form">
-            <label class="footer-subscribe">Subscribe</label>
-            <div class="footer-subscribe_con">
-                <input class="footer-subscribe_search" type="email" placeholder="E-mail">
-            <button class="footer-subscribe_button" type="submit">Subscribe</button>
-        </div>
-        </form>
+        
     </footer>
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
@@ -448,73 +438,73 @@
                     <span class="modal-button-send-text">Send</span>
                 </button>
         </div>
-        <div class="menu-container js-menu-container" id="mobile-menu">
-            <button class="menu-toggle js-close-menu">
-              <svg class="mobile-toogle-cross"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                  clip-rule="evenodd"
-                ></path>
-              </svg>
-            </button>
-      
-            <ul class="mobile-menu list">
-              <li class="modal-menu-item">
-                <a href="" class="mobile-menu-link link">Studio</a>
+    </div>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-toggle js-close-menu">
+          <svg class="mobile-toogle-cross"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </button>
+  
+        <ul class="mobile-menu list">
+          <li class="modal-menu-item">
+            <a href="" class="mobile-menu-link link">Studio</a>
+        </li>
+          <li class="modal-menu-item">
+            <a href="" class="mobile-menu-link link">Portfoli</a>
+        </li>
+          <li class="modal-menu-item">
+            <a href="" class="mobile-menu-link link">Contacts</a>
+        </li>
+        </ul>
+        <ul class="mobile-contacts list">
+            <li class="mobile-contacts-item">
+                <a class="mobile-contacts-link accent link" href="tel:+11(000)1111111">+11 (000) 111-11-11</a>
             </li>
-              <li class="modal-menu-item">
-                <a href="" class="mobile-menu-link link">Portfoli</a>
+            <li class="mobile-contacts-item">
+                <a class="mobile-contacts-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
             </li>
-              <li class="modal-menu-item">
-                <a href="" class="mobile-menu-link link">Contacts</a>
+        </ul> 
+        <ul class="our-team-icons-mobile list">
+            <li class="our-team-items">
+                <a class="icon-our-team" href="#">
+                    <svg class="our-soc-icon">
+                        <use href="./icons.svg#icon-instagram-2"></use>
+                    </svg>
+                </a>
             </li>
-            </ul>
-            <ul class="mobile-contacts list">
-                <li class="mobile-contacts-item">
-                    <a class="mobile-contacts-link accent link" href="tel:+11(000)1111111">+11 (000) 111-11-11</a>
-                </li>
-                <li class="mobile-contacts-item">
-                    <a class="mobile-contacts-item" href="mailto:info@devstudio.com">info@devstudio.com</a>
-                </li>
-            </ul> 
-            <ul class="our-team-icons-mobile list">
-                <li class="our-team-items">
-                    <a class="icon-our-team" href="#">
-                        <svg class="our-soc-icon">
-                            <use href="./icons.svg#icon-instagram-2"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="our-team-items">
-                    <a href="#" class="icon-our-team">
-                        <svg class="our-soc-icon">
-                            <use href="./icons.svg#icon-twitter"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="our-team-items">
-                    <a href="#" class="icon-our-team">
-                        <svg class="our-soc-icon">
-                            <use href="./icons.svg#icon-facebook-1"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="our-team-items">
-                    <a href="#" class="icon-our-team">
-                        <svg class="our-soc-icon">
-                            <use href="./icons.svg#icon-linkedin-1"></use>
-                        </svg>
-                    </a>
-                </li>
+            <li class="our-team-items">
+                <a href="#" class="icon-our-team">
+                    <svg class="our-soc-icon">
+                        <use href="./icons.svg#icon-twitter"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="our-team-items">
+                <a href="#" class="icon-our-team">
+                    <svg class="our-soc-icon">
+                        <use href="./icons.svg#icon-facebook-1"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="our-team-items">
+                <a href="#" class="icon-our-team">
+                    <svg class="our-soc-icon">
+                        <use href="./icons.svg#icon-linkedin-1"></use>
+                    </svg>
+                </a>
+            </li>
 </ul>
-          </div>
     </div>
     <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script>

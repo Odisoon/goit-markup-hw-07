@@ -635,11 +635,21 @@ a {
     letter-spacing: 0.04em;
 } */ 
 
+.head {
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+@media (min-width:768px) {
+    .head {
+        padding-top: 24px;
+        padding-bottom: 28px; 
+    }
+}
+
 
 .container {
     /* phone screen */
-    max-width: 428px;
-
     padding-left: 16px;
     padding-right: 16px;
 
@@ -836,17 +846,15 @@ a {
     pointer-events: none;
 }
 
-
-
-
-
-
-
-.list {
-    color: #2E2F42;
-    padding-top: 24px;
-    padding-bottom: 28px;
+.header-container {
+    display: flex;
+    align-items: center;
 }
+
+
+
+
+
 
 /* tablet screen */
 
@@ -854,34 +862,16 @@ a {
 
 /* desktop screen */
 
-
-@media (min-width: 1200px) {
-    .header-container {
-        display: flex;
-        justify-content: space-between;
-    } 
-}
-
-  @media (min-width: 1200px) {
-    .header-container {
-        margin-right: 76px;
-    }
-  }
-
-@media (min-width: 1200px) {
+@media (min-width:1200px) {
     .container {
         max-width: 1200px;
     }
 }
 
-@media (min-width: 1200px) {
-    .contact-info-container {
-        display: flex;
-        align-items: center;
-        gap: 40px;
-    }
-}
-    
+
+
+
+
     /* tablet screen */
 
 @media (min-width: 768px) {
@@ -911,15 +901,13 @@ a {
     }
 }
 
-@media (min-width: 768px) and (max-width: 1200px) {
+@media (min-width: 768px) {
     .contact-info-container {
         display: block;
-        margin-top: 24px;
-        margin-bottom: 30px;
     }
 }
 
-@media (min-width:767.8px) {
+@media (min-width:768px) {
     .header-container {
         display: flex;
         justify-content: space-between;
@@ -935,29 +923,28 @@ a {
 }
 
 
-@media (min-width:768px) and (max-width:1200px) {
+@media (min-width:768px) {
     .container-subtitles-one {
-        
         display: flex;
         flex-wrap: wrap;
         column-gap: 24px;
     }
 }
 
- @media (min-width:768px) and (max-width:1200px) {
+ @media (min-width:768px) {
     .subtitles-header{
         max-width: 356px;
     }
 }
 
-@media (min-width:768px) and (max-width:1200px) {
+@media (min-width:768px) {
     .container-subtitles {
         display: flex;
         flex-wrap: wrap;
     }
 }
 
-@media (min-width:768px) and (max-width:1200px) {
+@media (min-width:768px) {
     .our-team-container {
         padding-top: 64px;
         padding-bottom: 104px;
@@ -966,7 +953,7 @@ a {
     }
 }
 
-@media (min-width:768px) and (max-width:1200px) {
+@media (min-width:768px){
     .our-team {
         width: 264px;
         height: 428px;
@@ -977,14 +964,14 @@ a {
     }
 }
 
-@media (min-width:768px) and (max-width:1200px) {
+@media (min-width:768px){
     .our-team.accent {
         margin-bottom: 64px;
     }
 }
 
 
-@media (min-width:768px) and (max-width:1200px) {
+@media (min-width:768px){
     .customers {
         display: flex;
         flex-wrap: wrap;
@@ -993,31 +980,28 @@ a {
     }
 }
 
-@media (min-width:768px) and (max-width:1200px) {
+@media (min-width:768px){
     .customers-icons {
         width: 168px;
     }
 }
 
-@media (min-width:768px) and (max-width:1200px) {
-    .web {
-        font-weight: 800;
-        font-size: 18px;
-        line-height: 1.3;
-        letter-spacing: 0.03em;
-        color: #4D5AE5;
-    }
-}
-
-@media (min-width:768px) and (max-width: 1200px) {
+@media (min-width:768px){
     .contact-info-item:not(:last-child) {
         margin-bottom: 4px;
     }
 }
 
-@media (min-width:768px) and (max-width:1200px) {
+@media (min-width:768px){
     .second-con-footer {
         text-align: left;
+    }
+}
+
+@media (min-width:1200px) {
+    .header-container {
+        display: flex;
+        justify-content: space-between;
     }
 }
 
@@ -1036,6 +1020,35 @@ a {
         padding-bottom: 120px;
         }
     }
+
+/* @media (min-width:1200px) {
+    .contact-info-container {
+        padding-top: 24px;
+        padding-bottom: 28px;
+    }
+} */
+
+
+@media (min-width:1200px) {
+    .web {
+        margin-right: 76px;
+    }
+}
+
+@media (min-width:1200px) {
+    .contact-info-container {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+    }
+}
+
+
+
+
+
+
+
 
 .icon-subtitles {
     background: #F4F4FD;
@@ -1095,7 +1108,7 @@ a {
     }
 }
 
-@media (min-width:768px) and (max-width:1200px) {
+@media (min-width:768px) {
     .header-1 {
         font-weight: 700;
         font-size: 56px;
@@ -1295,18 +1308,18 @@ a {
 }
 
 
-@media (min-width:768px) and (max-width:1200px) {
+@media (min-width:768px) {
     .footer-subscribe_form {
     }
 }
 
-@media (min-width:768px) and (max-width:1200px) {
+@media (min-width:768px) {
     .footer-subscribe_con {
         display: flex;
     }
 }
 
-@media (min-width:768px) and (max-width:1200px) {
+@media (min-width:768px) {
     .footer-container {
         width: 268px;
         margin-left: 92px;
@@ -1315,7 +1328,7 @@ a {
     }
 }
 
-@media (min-width:768px) and (max-width:1200px) {
+@media (min-width:768px) {
     .footer-container-flex {
         display: flex;
         align-items: baseline;
@@ -1323,7 +1336,7 @@ a {
 }
 
 
-@media (min-width:768px) and (max-width:1200px) {
+@media (min-width:768px) {
     .footer-text {
         font-weight: 400;
         font-size: 16px;
@@ -1337,7 +1350,7 @@ a {
     }
 }
 
-@media (min-width:768px) and (max-width:1200px) {
+@media (min-width:768px) {
     .social-media-block {
         display: flex;
         gap: 16px;
@@ -1365,8 +1378,8 @@ a {
     color: #F4F4FD;
 }
 
-@media (min-width:768px) and (max-width:1200px) {
-    .studio {
+@media (min-width:768px) {
+    .web {
         margin-right: 123px;
     }
 }
@@ -1499,19 +1512,13 @@ a {
 }
 
 
-@media (min-width: 480px) and (max-width:768px) {
+@media (min-width: 480px) and (max-width:767.8px) {
     .header-container-mobile {
         display: flex;
         align-items: center;
     }
 }
 
-@media (min-width: 480px) and (max-width:768px) {
-    .web {
-        padding-top: 24px;
-        padding-bottom: 24px;
-    }
-}
 
 @media (min-width: 768px) {
     .icon-burger {
@@ -1542,13 +1549,13 @@ a {
   
 /* mobile */
 
-@media (max-width:768px) {
+@media (max-width:1200px) {
     .container-subtitles-one {
         padding-top: 96px;
     }
 }
 
-@media (min-width:480px) and (max-width:767.8px) {
+@media (max-width:767.8px) {
     .button-burger {
         display: inline-flex;
         background-color: transparent;

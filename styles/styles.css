@@ -236,13 +236,6 @@ a {
     background: blue;
 }
 
-.subtitles-text {
-    font-size: 16px;
-    line-height: 1.5;
-    color: #434455;
-    
-}
-
 .header-2 {
     font-weight: 600;
     font-size: 36px;
@@ -1174,6 +1167,7 @@ a {
 @media (max-width:767.8px) {
     .subtitles-header {
         padding-bottom: 96px;
+        text-align: center;
     }
 }
 
@@ -1186,12 +1180,13 @@ a {
     margin-bottom: 8px;
 }
 
-.subtitles-text {
-    font-size: 16px;
-    line-height: 1.5;
-    color: #434455;
-    letter-spacing: 0.02em;
-    order: 1;
+@media (max-width:767.8px) {
+    .subtitles-text {
+        font-size: 16px;
+        line-height: 1.5;
+        color: #434455;
+        text-align: center;
+    }
 }
 
 @media (max-width: 1199px) {
@@ -1263,13 +1258,6 @@ a {
     font-size: 20px;
 }
 
-.subtitles-text {
-    font-size: 16px;
-    line-height: 1.5;
-    color: #434455;
-    letter-spacing: 0.02em;
-    order: 1;
-}
 
 .our-team-icons {
     display: flex;
@@ -1360,7 +1348,14 @@ a {
 
 @media (min-width:768px) and (max-width:1199px) {
     .footer-subscribe_con {
+        display: flex;
+        gap: 24px;
+    }
+}
 
+@media (max-width:767.8px) {
+    .footer-subscribe_form {
+        display: block;
     }
 }
 
@@ -1391,6 +1386,7 @@ a {
         color: #E7E9FC;
         padding-top: 16px;
         text-align: left;
+        margin-bottom: 72px;
     }
 }
 
@@ -1495,20 +1491,43 @@ a {
     padding-bottom: 16px;
 }
 
+@media (min-width:768px) and (max-width:1199px) {
+    .footer-subscribe {
+        text-align: left;
+    }
+}
 
-.footer-subscribe_search {
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-    border-radius: 4px;
-    background: #2E2F42;
-    width: 264px;
-    height: 40px;
-    padding-left: 16px;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    color: #FFFFFF;
-    max-width: 264px;
-    margin-bottom: 16px;
+
+@media (max-width:767.8px) {
+    .footer-subscribe_search {
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+        border-radius: 4px;
+        background: #2E2F42;
+        height: 40px;
+        padding-left: 16px;
+        padding-top: 8px;
+        width: 396px;
+        padding-bottom: 8px;
+        color: #FFFFFF;
+        margin-bottom: 16px;
+    }
+}
+
+@media (min-width:768px) and (max-width:1199px) {
+    .footer-subscribe_search {
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+        border-radius: 4px;
+        background: #2E2F42;
+        height: 40px;
+        padding-left: 16px;
+        padding-top: 8px;
+        width: 264px;
+        padding-bottom: 8px;
+        color: #FFFFFF;
+        margin-bottom: 16px;
+    }
 }
 
 .footer-subscribe_button {
@@ -1527,7 +1546,6 @@ a {
 
 @media (min-width:768px) and (max-width:1199px) {
     .footer-subscribe_button {
-        margin-top: 142px;
     }
 }
 

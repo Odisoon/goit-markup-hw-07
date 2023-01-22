@@ -896,6 +896,7 @@ a {
     .web-text {
         display: flex;
         gap: 40px;
+        color: #2E2F42;
     }
 }
 

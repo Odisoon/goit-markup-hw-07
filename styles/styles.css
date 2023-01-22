@@ -607,20 +607,27 @@ a {
 
 
 .container {
-    min-width: 320px;
-    max-width: 480px;
-    /* phone screen */
+    /* min-width: 320px;
+    max-width: 480px; */
     padding-left: 16px;
     padding-right: 16px;
 
-    margin-left: auto;
-    margin-right: auto;
+    /* margin-left: auto;
+    margin-right: auto; */
 
 
     /* max-width: 1158px;
     margin: 0 auto;
      */
 }
+
+@media screen and (min-width:480px) {
+    .container {
+      max-width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
 
 /* modal screen */
 
@@ -858,7 +865,7 @@ a {
 
 @media (min-width:1200px) {
     .container {
-        max-width: 1200px;
+        width: 1200px;
     }
 }
 
@@ -872,9 +879,9 @@ a {
 
     /* tablet screen */
 
-@media (min-width: 768px) and (max-width:1199px) {
+@media (min-width:768px) and (max-width:1199px) {
     .container {
-        max-width: 768px;
+        width: 768px;
     }
 }
 
@@ -902,13 +909,13 @@ a {
 @media (min-width: 768px) {
     .contact-info-container {
         display: block;
+        margin-left: auto;
     }
 }
 
 @media (min-width:768px) {
     .header-container {
         display: flex;
-        justify-content: space-between;
         align-items: center;
     }
 }
@@ -1000,7 +1007,7 @@ a {
 @media (min-width:1200px) {
     .header-container {
         display: flex;
-        justify-content: space-between;
+        align-items: center;
     }
 }
 
@@ -1068,7 +1075,9 @@ a {
 @media (min-width:1200px) {
     .contact-info-container {
         display: flex;
+        flex-direction: row;
         align-items: center;
+        margin-left: auto;
         gap: 40px;
     }
 }
@@ -1127,11 +1136,54 @@ a {
 .main-header {
     background: #2E2F42;
     padding: 112px 56px 240px 54px;
-    background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/background-office.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+
+    background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/background-oficce-mobile.jpg');
 }
+
+@media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .main-header {
+            background-image:  background-image: linear-gradient(to right, rgba(24, 22, 22, 0.7), rgba(46, 47, 66, 0.7)), url(../images/background-oficce-mobile-mobile@2x.jpg);
+        }
+    }
+
+    /* screen >= 480px*/
+@media screen and (min-width: 481px) {
+    .main-header {
+        background-image:  background-image: linear-gradient(to right, rgba(24, 22, 22, 0.7), rgba(46, 47, 66, 0.7)), url(../images/background-oficce-tablet.jpg);
+    }
+}
+
+@media screen and (min-width: 481px) and (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .main-header {
+        background-image:  background-image: linear-gradient(to right, rgba(24, 22, 22, 0.7), rgba(46, 47, 66, 0.7)), url(../images/background-oficce-tablet@2x.jpg);
+    }
+}
+
+/* screen >= 768px */
+
+@media screen and (min-width: 769px) {
+    .main-header {
+        background-image:  background-image: linear-gradient(to right, rgba(24, 22, 22, 0.7), rgba(46, 47, 66, 0.7)), url(../images/background-office.jpg);
+    }
+}
+
+@media screen and (min-width: 769px) and (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .main-header {
+        background-image:  background-image: linear-gradient(to right, rgba(24, 22, 22, 0.7), rgba(46, 47, 66, 0.7)), url(../images/background-office-desktop@2x.jpg)
+    }
+}
+
+
+
 
 @media (max-width:768px) {
     .header-1 {
@@ -1645,8 +1697,9 @@ a {
     }
 }
 
+
 @media (min-width: 768px) {
-    .button-burger {
+    .menu-container {
         display: none;
     }
 }

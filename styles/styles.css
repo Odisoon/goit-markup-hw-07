@@ -630,7 +630,7 @@ a {
 
     /* margin-left: auto;
     margin-right: auto; */
-    width: 480px;
+    /* width: 480px; */
 
     /* max-width: 1158px;
     margin: 0 auto;
@@ -1137,7 +1137,11 @@ a {
 
 
 
-
+@media (max-width:767.8px) {
+    .footer-subscribe_con {
+        display:
+    }
+}
 
 
 
@@ -1300,14 +1304,12 @@ screen and (min-resolution: 2dppx) and (min-width: 429px) {
     margin-bottom: 8px;
 }
 
-@media (max-width:767.8px) {
-    .subtitles-text {
+.subtitles-text {
         font-size: 16px;
         line-height: 1.5;
         color: #434455;
         text-align: left;
     }
-}
 
 @media (max-width: 1199px) {
     .pic-container {
@@ -1633,7 +1635,7 @@ screen and (min-resolution: 2dppx) and (min-width: 429px) {
 }
 
 
-@media (max-width:767.8px) {
+@media (max-width:479px) {
     .footer-subscribe_search {
         border: 1px solid rgba(255, 255, 255, 0.3);
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -1643,10 +1645,25 @@ screen and (min-resolution: 2dppx) and (min-width: 429px) {
         padding-left: 16px;
         padding-top: 8px;
         padding-bottom: 8px;
-        /* width: 100%; */
-        width: 396px;
         color: #FFFFFF;
         margin-bottom: 16px;
+        width: 296px;
+    }
+}
+
+@media (min-width:480px) and (max-width:767.8px) {
+    .footer-subscribe_search {
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+        border-radius: 4px;
+        background: #2E2F42;
+        height: 40px;
+        padding-left: 16px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        color: #FFFFFF;
+        margin-bottom: 16px;
+        width: 396px;
     }
 }
 
